@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+.env
+venv/
+.idea/
+FAU_Onyx_Strength_Report.pdf
+midtermpractuice.py
+generate_charts.py
+Monty hall.py
