@@ -18,7 +18,7 @@ def to_american(decimal_odds):
         return f"{val}"
 
 
-api_key = "67731391cb78a25b7c7089e4ecb0b15c"
+api_key = os.getenv("ODDS_API_KEY", "YOUR_API_KEY_HERE")
 sport = "baseball_mlb"
 markets_to_scan = "h2h,spreads,totals"
 url = f"https://api.the-odds-api.com/v4/sports/{sport}/odds/?apiKey={api_key}&regions=us&markets={markets_to_scan}"
